@@ -1,0 +1,38 @@
+.news-wrapper {
+    display: grid;
+    background: #FFFFFA;
+    grid-template-columns: 1fr 1fr;
+       grid-gap: 15px;
+       padding-top: 10%;
+       padding-bottom: 5%;
+       padding-right: 20%;
+       padding-left: 20%;
+    grid-template-areas:
+    "content-1 content-2"
+        "content-3 content-3";
+}
+
+.content-1 {
+    grid-area: content-1;
+}
+
+.content-2 {
+    grid-area: content-2;
+}
+
+.content-3 {
+    grid-area: content-3;
+}
+
+@media only screen and (max-width: 600px) {
+
+.news-wrapper {
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "content-1"
+    "content-2"
+    "content-3";
+    padding-left: 10%;
+    padding-right: 10%;
+}
+}
